@@ -1,3 +1,5 @@
+import com.wangkm.buildsrc.Libs
+
 buildscript {
     ext {
         compose_version = '1.0.1'
@@ -6,8 +8,15 @@ buildscript {
         compose_snapshot_version = ''
         coroutines_version = '1.6.0'
         accompanist_version = '0.24.12-rc'
-
     }
+
+    dependencies {
+        classpath Libs.androidGradlePlugin
+        classpath Libs.Kotlin.gradlePlugin
+        classpath Libs.Hilt.gradlePlugin
+        classpath Libs.secretsGradlePlugin
+    }
+
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '7.2.1' apply false

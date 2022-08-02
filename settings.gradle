@@ -16,5 +16,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComposeProjectCollection"
 include ':app'
-include ':jetnews'
-include ':jetcaster'
+include ':Jetnews'
+include ':Jetcaster'
+include ':Jetsnack'
+include ':Jetchat'
+include ':Jetsurvey'
+include ':Owl'
+include ':Crane'
